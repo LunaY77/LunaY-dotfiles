@@ -482,6 +482,12 @@ nmap <leader>y "+yy
 "========== z ==========
 let g:WhichKeyDesc_Zip = "<leader>z 折叠"
 
+" 折叠当前代码块
+let g:WhichKeyDesc_Zip_Zip = "<leader>zf 折叠当前代码"
+nmap <leader>zf zc
+" 展开当前代码块
+let g:WhichKeyDesc_Zip_unZip = "<leader>zg 展开当前代码"
+nmap <leader>zg zo
 "展开所有代码折叠区域(Ctrl + Shift + 加号键)
 let g:WhichKeyDesc_Zip_unZipAll = "<leader>zo 展开所有折叠"
 nmap <leader>zo <action>(ExpandAllRegions)

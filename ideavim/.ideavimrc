@@ -489,7 +489,15 @@ nmap <leader>zo <action>(ExpandAllRegions)
 let g:WhichKeyDesc_Zip_ZipAll = "<leader>zc 折叠所有代码"
 nmap <leader>zc <action>(CollapseAllRegions)
 
+"============ number ===========
 
+"递增数字
+let g:WhichKeyDesc_Increment = "<leader>+ 递增数字"
+nmap <leader>+ <C-a>
+
+"递减数字
+let g:WhichKeyDesc_Decrement = "<leader>- 递减数字"
+nmap <leader>- <C-x>
 
 
 " ================================================================================================

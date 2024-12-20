@@ -29,32 +29,32 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "tsserver",         -- TypeScript/JavaScript LSP
+        -- "tsserver",         -- TypeScript/JavaScript LSP
         "html",             -- HTML LSP
         "cssls",            -- CSS LSP
         "tailwindcss",      -- Tailwind CSS LSP
-        "svelte",           -- Svelte LSP
-        "lua_ls",           -- Lua LSP
-        "graphql",          -- GraphQL LSP
-        "emmet_ls",         -- Emmet LSP
-        "prismals",         -- Prisma LSP
-        "pyright",          -- Python LSP
+        -- "svelte",           -- Svelte LSP
+        -- "lua_ls",           -- Lua LSP
+        -- "graphql",          -- GraphQL LSP
+        -- "emmet_ls",         -- Emmet LSP
+        -- "prismals",         -- Prisma LSP
+        -- "python-lsp-server",          -- Python LSP
         "jdtls",            -- Java LSP (Java Development Tools)
-        "dockerls",         -- Docker LSP
-        "dockerfile_ls",    -- Dockerfile LSP
-        "gopls",            -- Go LSP
-        "clangd",           -- C/C++ LSP  
+        -- "dockerls",         -- Docker LSP
+        -- "dockerfile_ls",    -- Dockerfile LSP
+        -- "gopls",            -- Go LSP
+        -- "clangd",           -- C/C++ LSP  
       },
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
         "prettier", -- prettier formatter
-        "stylua", -- lua formatter
         "isort", -- python formatter
         "black", -- python formatter
         "pylint", -- python linter
         "eslint_d", -- JavaScript linter  
+        "checkstyle", -- Java linter
       },
     })
   end,

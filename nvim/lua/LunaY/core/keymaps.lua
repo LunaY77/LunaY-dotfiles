@@ -21,3 +21,12 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "关闭当前标签�
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "前往下一个标签页" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "前往上一个标签页" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "将当前缓冲移动到新标签页" }) --  move current buffer to new tab
+
+vim.keymap.set("n", "<leader>aa", function()
+  -- 保存光标位置
+  local save_cursor = vim.fn.getpos(".")
+  -- 执行全选并复制
+  vim.cmd("normal! ggvGy")
+  -- 恢复光标位置
+  vim.fn.setpos(".", save_cursor)
+end, { desc = "全选并复制，但光标保持在原位置" })

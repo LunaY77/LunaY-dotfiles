@@ -32,8 +32,8 @@ vim.keymap.set("n", "<leader>aa", function()
 end, { desc = "全选并复制，但光标保持在原位置" })
 
 -- 解绑 Ctrl+d 和 Ctrl+u
-vim.keymap.set("n", "<C-d>", "<Nop>", { desc = "解除 Ctrl+d 的翻页绑定" })
-vim.keymap.set("n", "<C-u>", "<Nop>", { desc = "解除 Ctrl+u 的翻页绑定" })
+-- vim.keymap.set("n", "<C-d>", "<Nop>", { desc = "解除 Ctrl+d 的翻页绑定" })
+-- vim.keymap.set("n", "<C-u>", "<Nop>", { desc = "解除 Ctrl+u 的翻页绑定" })
 
 -- 绑定 <leader>v 和 <leader>b
 vim.keymap.set("n", "<leader>v", "<C-d>", { desc = "向下翻页" })

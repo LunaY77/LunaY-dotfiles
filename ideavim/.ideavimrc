@@ -38,7 +38,7 @@ set number relativenumber
 "--设置返回normal模式时回到英文输入法
 set keep-english-in-normal
 
-
+set clipboard=unnamedplus
 
 " ================================================================================================
 " 🌍🌍🌍 No Leader Keymaps 🌍🌍🌍
@@ -505,6 +505,17 @@ nmap <leader>+ <C-a>
 let g:WhichKeyDesc_Decrement = "<leader>- 递减数字"
 nmap <leader>- <C-x>
 
+"============ 翻页 =============
+
+" 解绑 Control + d 和 Control + u
+nnoremap <C-d> <Nop>
+nnoremap <C-u> <Nop>
+
+" 将翻页功能映射到 Shift + Command + d 和 Shift + Command + u
+let g:WhichKeyDesc_PageDown = "<leader>dd 向下翻页"
+let g:WhichKeyDesc_PageUp = "<leader>rr 向上翻页"
+nnoremap <leader>dd <C-d>
+nnoremap <leader>rr <C-u>
 
 " ================================================================================================
 " 🌸🌸🌸 NERDTree 🌸🌸🌸

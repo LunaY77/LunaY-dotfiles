@@ -30,3 +30,11 @@ vim.keymap.set("n", "<leader>aa", function()
   -- 恢复光标位置
   vim.fn.setpos(".", save_cursor)
 end, { desc = "全选并复制，但光标保持在原位置" })
+
+-- 解绑 Ctrl+d 和 Ctrl+u
+vim.keymap.set("n", "<C-d>", "<Nop>", { desc = "解除 Ctrl+d 的翻页绑定" })
+vim.keymap.set("n", "<C-u>", "<Nop>", { desc = "解除 Ctrl+u 的翻页绑定" })
+
+-- 绑定 <leader>dd 和 <leader>rr
+vim.keymap.set("n", "<leader>dd", "<C-d>", { desc = "向下翻页" })
+vim.keymap.set("n", "<leader>rr", "<C-u>", { desc = "向上翻页" })

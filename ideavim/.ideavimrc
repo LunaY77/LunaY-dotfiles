@@ -75,7 +75,7 @@ let g:WhichKeyDesc_GotoTest = "gt 在源代码和测试代码之间快速切换"
 nmap gm <action>(MethodUp)
 let g:WhichKeyDesc_MethodUp = "gm 将光标移动到上一个方法的声明处"
 "跳转到当前接口或抽象类的实现处
-nmap ga <action>(GotoImplementation)
+map ga <action>(GotoImplementation)
 let g:WhichKeyDesc_GotoImplementation = "ga 跳转到当前接口或抽象类的实现处"
 
 " bookmark 切换书签
@@ -512,10 +512,10 @@ nnoremap <C-d> <Nop>
 nnoremap <C-u> <Nop>
 
 " 将翻页功能映射到 Shift + Command + d 和 Shift + Command + u
-let g:WhichKeyDesc_PageDown = "<leader>dd 向下翻页"
-let g:WhichKeyDesc_PageUp = "<leader>rr 向上翻页"
-nnoremap <leader>dd <C-d>
-nnoremap <leader>rr <C-u>
+let g:WhichKeyDesc_PageDown = "<leader>v 向下翻页"
+let g:WhichKeyDesc_PageUp = "<leader>b 向上翻页"
+nnoremap <leader>v <C-d>
+nnoremap <leader>b <C-u>
 
 " ================================================================================================
 " 🌸🌸🌸 NERDTree 🌸🌸🌸

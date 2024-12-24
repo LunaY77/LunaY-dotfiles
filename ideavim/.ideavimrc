@@ -260,6 +260,10 @@ nmap <leader>cc <action>(CodeCompletion)
 let g:WhichKeyDesc_CodeAndClose_CloseAllEditorsButActive = "<leader>co 关闭其他标签页"
 nmap <leader>co :action CloseAllEditorsButActive<CR>
 
+"复制类的相对路径
+let g:WhichKeyDesc_CopyReference = "<leader>cr 复制类的相对路径"
+nmap <leader>cr :action CopyReference<CR>
+
 "========== d ==========
 let g:WhichKeyDesc_DeBugOrDelete= "<leader>d 调试&删除"
 "打断点/解除断点
@@ -516,6 +520,10 @@ let g:WhichKeyDesc_PageDown = "<leader>v 向下翻页"
 let g:WhichKeyDesc_PageUp = "<leader>b 向上翻页"
 nnoremap <leader>v <C-d>
 nnoremap <leader>b <C-u>
+
+" ============== 触发快速修复 =============
+" 在普通模式下，按键 <leader>q 触发快速修复
+nmap <leader>q :action ShowIntentionActions<CR>
 
 " ================================================================================================
 " 🌸🌸🌸 NERDTree 🌸🌸🌸

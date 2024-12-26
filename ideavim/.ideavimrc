@@ -310,8 +310,8 @@ let g:WhichKeyDesc_GitOrGenerate = "<leader>g Git&构造"
 let g:WhichKeyDesc_GitOrGenerate_RollbackHunk = "<leader>gr git回滚"
 nmap <leader>gr :action Vcs.RollbackChangedLines<CR>
 "生成构造器
-let g:WhichKeyDesc_GitOrGenerate_GenerateConstructor = "<leader>gc 生成构造器"
-nmap <leader>gc :action GenerateConstructor<CR>
+let g:WhichKeyDesc_GitOrGenerate_GenerateConstructor = "<leader>go 生成构造器"
+nmap <leader>go :action GenerateConstructor<CR>
 "生成getter
 let g:WhichKeyDesc_GitOrGenerate_GenerateGetter = "<leader>gg 生成getter"
 nmap <leader>gg :action GenerateGetter<CR>
@@ -331,6 +331,13 @@ nmap <leader>gt <action>(Actions.ActionsPlugin.GenerateToString)
 nmap <leader>gd <action>(Vcs.ShowTabbedFileHistory)
 let g:WhichKeyDesc_DebugOrDelete_ShowTabbedFileHistory = "<leader>gd 显示文件的版本控制历史"
 
+" 映射快捷键 gc：注释当前行
+let g:WhichKeyDesc_CommentByLineComment = "<leader>gc 注释当前行"
+nmap <leader>gc :action CommentByLineComment<CR>
+
+" 映射快捷键 gc：注释选中区域
+let g:WhichKeyDesc_CommentByLineComment = "gc 注释当前行"
+xmap gc :action CommentByLineComment<CR>
 
 "========== h ==========
 "跳转到左边的分割窗口

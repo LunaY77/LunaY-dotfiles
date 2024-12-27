@@ -72,11 +72,21 @@ nmap gt <action>(GotoTest)
 let g:WhichKeyDesc_GotoTest = "gt 在源代码和测试代码之间快速切换"
 "将光标移动到上一个方法的声明处
 " last changed in current buffer(file)
-nmap gm <action>(MethodUp)
-let g:WhichKeyDesc_MethodUp = "gm 将光标移动到上一个方法的声明处"
+nmap gp <action>(MethodUp)
+let g:WhichKeyDesc_MethodUp = "gp 将光标移动到上一个方法的声明处"
+
+"将光标移动到下一个方法的声明处
+" last changed in current buffer(file)
+nmap gn :action MethodDown<CR>
+let g:WhichKeyDesc_MethodDown = "gn 将光标移动到下一个方法的声明处"
+
 "跳转到当前接口或抽象类的实现处
 map ga <action>(GotoImplementation)
 let g:WhichKeyDesc_GotoImplementation = "ga 跳转到当前接口或抽象类的实现处"
+
+"跳转到声明或使用
+map gs <action>(GotoDeclaration)
+let g:WhichKeyDesc_GotoDeclaration = "gs 跳转到声明或使用"
 
 " bookmark 切换书签
 nmap ma <action>(ToggleBookmark)
@@ -332,7 +342,7 @@ nmap <leader>gd <action>(Vcs.ShowTabbedFileHistory)
 let g:WhichKeyDesc_DebugOrDelete_ShowTabbedFileHistory = "<leader>gd 显示文件的版本控制历史"
 
 " 映射快捷键 gc：注释当前行
-let g:WhichKeyDesc_CommentByLineComment = "<leader>gc 注释当前行"
+let g:WhichKeyDesc_CommentWithLineComment = "<leader>gc 注释当前行"
 nmap <leader>gc :action CommentByLineComment<CR>
 
 " 映射快捷键 gc：注释选中区域

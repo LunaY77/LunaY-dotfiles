@@ -40,6 +40,7 @@ set keep-english-in-normal
 
 set clipboard=unnamedplus
 
+
 " ================================================================================================
 " 🌍🌍🌍 No Leader Keymaps 🌍🌍🌍
 " ================================================================================================
@@ -209,7 +210,7 @@ set notimeout
 " sb: ShowBookmarks-显示书签（Bookmarks）工具窗口，其中包含当前文件中设置的书签列表(Ctrl + F11)
 " sp: ShowParameterInfo-用于显示方法或函数的参数信息(Ctrl + p)
 "===================================== T =====================================
-" t: Translate-翻译(需要Translate插件)
+" t:
 "===================================== U =====================================
 " u:
 "===================================== V =====================================
@@ -453,10 +454,6 @@ nmap <leader>st <action>(Stop)
 
 
 "========= t ==========
-"翻译
-let g:WhichKeyDesc_Translate = "<leader>t 翻译"
-nmap <leader>t <action>($EditorTranslateAction)
-vmap <leader>t <action>($EditorTranslateAction)
 
 
 "========== w ==========
@@ -540,6 +537,7 @@ nnoremap <leader>b <C-u>
 
 " ============== 触发快速修复 =============
 " 在普通模式下，按键 <leader>q 触发快速修复
+let g:WhichKeyDesc_ShowIntentionActions = "<leader>q 快速修复"
 nmap <leader>q :action ShowIntentionActions<CR>
 
 " ================================================================================================
@@ -573,6 +571,26 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 let g:WhichKeyDesc_easymotionkey = "<leader><leader> 快速跳转插件"
 
+"           Default Mapping      | Details
+"   <leader><Leader>f{char}      | Find {char} to the right. See |f|.
+"   <leader><Leader>F{char}      | Find {char} to the left. See |F|.
+"   <leader><Leader>t{char}      | Till before the {char} to the right. See |t|.
+"   <leader><Leader>T{char}      | Till after the {char} to the left. See |T|.
+"   <leader><Leader>w            | Beginning of word forward. See |w|.
+"   <leader><Leader>W            | Beginning of WORD forward. See |W|.
+"   <leader><Leader>b            | Beginning of word backward. See |b|.
+"   <leader><Leader>B            | Beginning of WORD backward. See |B|.
+"   <leader><Leader>e            | End of word forward. See |e|.
+"   <leader><Leader>E            | End of WORD forward. See |E|.
+"   <leader><Leader>ge           | End of word backward. See |ge|.
+"   <leader><Leader>gE           | End of WORD backward. See |gE|.
+"   <leader><Leader>j            | Line downward. See |j|.
+"   <leader><Leader>k            | Line upward. See |k|.
+"   <leader><Leader>n            | Jump to latest "/" or "?" forward. See |n|.
+"   <leader><Leader>N            | Jump to latest "/" or "?" backward. See |N|.
+"   <leader><Leader>s            | Find(Search) {char} forward and backward.<leader><leader>
+
 "普通模式输入s后输入要跳转到单词首字母(或多输入几个字母)
 nmap s <Plug>(easymotion-bd-n)
 let g:WhichKeyDesc_easymotion = "s 快速跳转"
+

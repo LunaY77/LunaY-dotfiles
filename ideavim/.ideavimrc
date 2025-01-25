@@ -9,8 +9,6 @@ Plug 'easymotion/vim-easymotion'
 "IdeaVim-EasyMotion
 "IdeaVimExtension
 "which-key
-"CodeGlance Pro
-"TranslateAction
 
 
 
@@ -35,10 +33,29 @@ set hlsearch
 "--设置相对行号 和 当前行的绝对行号
 set number relativenumber
 
+"--设置环绕处理
+set surround
+
 "--设置返回normal模式时回到英文输入法
 set keep-english-in-normal
 
+"--设置系统剪贴板
 set clipboard=unnamedplus
+
+"--方法参数编辑插件 
+set argtextobj
+
+"--多光标插件
+set multiple-cursors
+" Remap multiple-cursors shortcuts for Mac
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap <C-x> <Plug>SkipOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+nmap <C-p> <Plug>RemoveOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+nmap <S-C-n> <Plug>AllWholeOccurrences
+xmap <S-C-n> <Plug>AllWholeOccurrences
 
 
 " ================================================================================================
@@ -80,6 +97,10 @@ let g:WhichKeyDesc_MethodUp = "gp 将光标移动到上一个方法的声明处"
 " last changed in current buffer(file)
 nmap gn :action MethodDown<CR>
 let g:WhichKeyDesc_MethodDown = "gn 将光标移动到下一个方法的声明处"
+
+"跳转到父类或接口方法
+map gf <action>(GotoSuperMethod)
+let g:WhichKeyDesc_gotoSuperMethod = "gf 跳转到父类或接口方法"
 
 "跳转到当前接口或抽象类的实现处
 map ga <action>(GotoImplementation)
@@ -255,7 +276,7 @@ let g:WhichKeyDesc_LeaderKeymap= "<leader> 🌟🌟🌟紫色为二级目录🌟
 "========== b ==========
 
 
-"========== c =========c
+"========== c =========
 let g:WhichKeyDesc_CodeAndClose = "<leader>c Code&关闭"
 
 "关闭所有标签页
@@ -523,18 +544,6 @@ nmap <leader>+ <C-a>
 let g:WhichKeyDesc_Decrement = "<leader>- 递减数字"
 nmap <leader>- <C-x>
 
-"============ 翻页 =============
-
-" 解绑 Control + d 和 Control + u
-" nnoremap <C-d> <Nop>
-" nnoremap <C-u> <Nop>
-
-" 将翻页功能映射到 Shift + Command + d 和 Shift + Command + u
-let g:WhichKeyDesc_PageDown = "<leader>v 向下翻页"
-let g:WhichKeyDesc_PageUp = "<leader>b 向上翻页"
-nnoremap <leader>v <C-d>
-nnoremap <leader>b <C-u>
-
 " ============== 触发快速修复 =============
 " 在普通模式下，按键 <leader>q 触发快速修复
 let g:WhichKeyDesc_ShowIntentionActions = "<leader>q 快速修复"
@@ -556,13 +565,13 @@ nnoremap <leader>nn :NERDTreeFocus<CR>
 let g:WhichKeyDesc_NERDTreeOrNo_NERDTreeFocus = "<leader>nn 转移到目录树"
 
 "按下 <C-n> 将打开 NERDTree 文件资源管理器(==<leader>nn)
-nnoremap <C-n> :NERDTree<CR>
+"nnoremap <C-n> :NERDTree<CR>
 
 "按下 <C-t> 将切换 NERDTree 文件资源管理器的显示状态，即打开或关闭 NERDTree(不建议)
-nnoremap <C-t> :NERDTreeToggle<CR>
+"nnoremap <C-t> :NERDTreeToggle<CR>
 
 "按下 <C-f> 将在 NERDTree 文件资源管理器中定位当前编辑文件所在的节点，并使其可见(<leader>fl)
-nnoremap <C-f> :NERDTreeFind<CR>
+"nnoremap <C-f> :NERDTreeFind<CR>
 
 
   ================================================================================================

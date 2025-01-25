@@ -42,7 +42,7 @@ set keep-english-in-normal
 "--设置系统剪贴板
 set clipboard=unnamedplus
 
-"--方法参数编辑插件 
+"--方法参数编辑插件
 set argtextobj
 
 "--多光标插件
@@ -167,6 +167,7 @@ set notimeout
 " cd: CloseEditor-关闭当前标签页
 " ca: CloseAllEditors-关闭所有标签页
 " co: CloseAllEditorsButActive-关闭其他标签页
+" cr: CopyReference-复制类的相对路径
 "===================================== D =====================================
 " d: DebugOrDelete-[目录]🎈
 " dp: BreakPoint-打断点/解除断点
@@ -201,13 +202,8 @@ set notimeout
 "===================================== L =====================================
 " l: MoveToRight-跳转到右边的分割窗口
 "===================================== M =====================================
-" m: CodeGlance-打开/关闭地图(需要CodeGlance Pro插件)
 "===================================== N =====================================
-" n: NERDTreeOrNo ⭐️[目录]🎈
-" nn: NERDTreeFocus-将使焦点转移到 NERDTree 窗口(配置在NERDTree专栏)
 " nh: NoHighlight-取消搜索高亮显示
-" nd: NewDir-新建文件夹
-" nc: NewClass-新建类
 "===================================== O =====================================
 " o:
 "===================================== P =====================================
@@ -216,7 +212,7 @@ set notimeout
 " [V]p: PasteClipboardDown-在可视模式中：从剪切板粘贴到下面行
 " [V]P: PasteClipboardUp-在可视模式中：从剪切板粘贴到上面行
 "===================================== Q =====================================
-" q:
+" q: 触发快速修复
 "===================================== R =====================================
 " r: Run/Re ⭐️[目录]🎈
 " ru: Run-运行
@@ -259,6 +255,11 @@ set notimeout
 " z: zip(fold) ⭐️[目录]🎈
 " zo: unZipAll-展开所有代码折叠区域(Ctrl + Shift + 加号键)
 " zc: ZipAll-折叠所有代码折叠区域(Ctrl + Shift + 减号键)
+" zg: 展开当前代码
+" zf: 折叠当前代码
+"===================================== number =====================================
+" +: Increment-递增数字
+" -: Decrement-递减数字 
 "=============================================================================
 "=============================================================================
 "=============================================================================
@@ -402,25 +403,13 @@ nmap <leader>l <c-w>l
 
 
 "========== m ==========
-"打开/关闭 代码小地图
-let g:WhichKeyDesc_CodeGlance = "<leader>m 开关小地图"
-nmap <leader>m <action>(CodeGlance.toggle)
-"好像更新版本后,突然用不了了,用默认的ctrl+shift+G吧
 
 
 "========== n ==========
-let g:WhichKeyDesc_NERDTreeOrNew = "<leader>n 目录树&新建"
 
 "取消搜索高亮显示(No Highlight)
-let g:WhichKeyDesc_NERDTreeOrNew_Highlight = "<leader>nh 取消搜索高亮"
+let g:WhichKeyDesc_NoHighlight = "<leader>nh 取消搜索高亮"
 nmap <leader>nh :nohlsearch<CR>
-"在当前目录新建文件夹
-let g:WhichKeyDesc_NERDTreeOrNew_NewDir = "<leader>nd 新建文件夹"
-nmap <leader>nd <action>(NewDir)
-"在当前目录新建类
-let g:WhichKeyDesc_NERDTreeOrNew_NewClass = "<leader>nc 新建.Class"
-nmap <leader>nc <action>(NewClass)
-
 
 "========== p ==========
 "从剪切板粘贴到下面行
@@ -497,9 +486,12 @@ nmap <leader>wmc <action>(SplitVertically)
 "取消所有分割窗口
 let g:WhichKeyDesc_Windows_UnsplitAll = "<leader>wa 取消所有分割窗口"
 nmap <leader>wa <action>(UnsplitAll)
-"关闭当前窗口或分割窗格
-let g:WhichKeyDesc_Windows_closeActiveWindow = "<leader>wc 关闭当前分割窗口"
+"关闭全部窗口
+let g:WhichKeyDesc_Windows_closeActiveWindow = "<leader>wc 关闭全部窗口"
 nmap <leader>wc <c-w>c
+"关闭当前窗口
+let g:WhichKeyDesc_Windows_CloseContent = "<leader>wd 关闭当前窗口"
+nmap <leader>wd <action>(CloseContent)
 "取消拆分当前分割窗口
 let g:WhichKeyDesc_Windows_Unsplit = "<leader>wu 取消拆分当前分割窗口"
 nmap <leader>wu <action>(Unsplit)
@@ -552,26 +544,36 @@ nmap <leader>q :action ShowIntentionActions<CR>
 " ================================================================================================
 " 🌸🌸🌸 NERDTree 🌸🌸🌸
 " ================================================================================================
-"<C-w-w>：在多个打开的编辑器窗口之间切换
-"在目录中，按下 go 打开文件并保持光标在目录
-"在目录中，按下 gi 以上下并排窗口形式打开文件(并关闭目录)
 "在目录树中，使用空格预览文件
 "光标在目录时，按Esc回到编辑器
 "编辑器和目录间切换存在许多功能类似的快捷键，相似但不完全相同
-"仅 打开/关闭 目录推荐使用<leader>wo 其次 Alt + 1
 
-"按下 <leader>nn 将使焦点转移到 NERDTree 窗口
-nnoremap <leader>nn :NERDTreeFocus<CR>
-let g:WhichKeyDesc_NERDTreeOrNo_NERDTreeFocus = "<leader>nn 转移到目录树"
-
-"按下 <C-n> 将打开 NERDTree 文件资源管理器(==<leader>nn)
-"nnoremap <C-n> :NERDTree<CR>
-
-"按下 <C-t> 将切换 NERDTree 文件资源管理器的显示状态，即打开或关闭 NERDTree(不建议)
-"nnoremap <C-t> :NERDTreeToggle<CR>
-
-"按下 <C-f> 将在 NERDTree 文件资源管理器中定位当前编辑文件所在的节点，并使其可见(<leader>fl)
-"nnoremap <C-f> :NERDTreeFind<CR>
+"以下是目录树下的快捷键
+"o 打开文件、目录和书签
+"go 打开选中文件，但光标保留在 NERDTree
+"t 在新标签页中打开选中的节点/书签
+"T 同 t，但焦点保持在当前标签页
+"i 在分割窗口中打开选中文件
+"gi 同 i，但光标保留在 NERDTree
+"s 在垂直分割窗口中打开选中文件
+"gs 同 s，但光标保留在 NERDTree
+"O 递归打开选中的目录
+"x 关闭当前节点的父目录
+"X 递归关闭当前节点的所有子节点
+"P 跳转到根节点
+"p 跳转到当前节点的父节点
+"K 在当前树层级向上跳转到目录
+"J 在当前树层级向下跳转到目录
+"<C-J> 向下跳转到当前目录的下一个兄弟节点
+"<C-K> 向上跳转到当前目录的上一个兄弟节点
+"r 递归刷新当前目录
+"R 递归刷新当前根目录
+"m 显示 NERDTree 菜单
+"q 关闭 NERDTree 窗口
+"A 放大/最小化 NERDTree 窗口
+"d 删除文件或目录
+"n 创建文件
+"N 创建目录
 
 
   ================================================================================================

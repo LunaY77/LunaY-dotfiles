@@ -1,0 +1,276 @@
+{
+  "main": {
+    "id": "199d9449ae20e424",
+    "type": "split",
+    "children": [
+      {
+        "id": "017cc4faf1f839b2",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "4fa8b2c3d3772d66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dairy/template/daily.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "daily"
+            },
+            "group": "f0294847293384ff"
+          }
+        ]
+      },
+      {
+        "id": "5e6db058fc446761",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "a82e5d3a1ffb4fe6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dairy/template/daily.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "daily"
+            },
+            "group": "f0294847293384ff"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4f14b17e268f90b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "88a447b3194ed60c",
+        "type": "tabs",
+        "dimension": 58.9648798521257,
+        "children": [
+          {
+            "id": "1d3e0639cf4c759c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "畸变",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c43b02e295c4e846",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "414a62a80d4fa672",
+        "type": "tabs",
+        "dimension": 41.0351201478743,
+        "children": [
+          {
+            "id": "38119d24dd106535",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 324
+  },
+  "right": {
+    "id": "a2f3e69f1404aa81",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee185182cd8a8c48",
+        "type": "tabs",
+        "dimension": 42.222222222222214,
+        "children": [
+          {
+            "id": "43f2a08e8da8da62",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "e2cbfc2b301938b4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "dairy/template/daily.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "daily 的反向链接列表"
+            }
+          },
+          {
+            "id": "c8558c106f4c3e27",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ]
+      },
+      {
+        "id": "98328103bdce2a61",
+        "type": "tabs",
+        "dimension": 57.777777777777786,
+        "children": [
+          {
+            "id": "a50dbc06c6016297",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "dairy/template/daily.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "daily 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 287.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-stille:Toggle Stille": false,
+      "random-note:开始漫游笔记": false,
+      "quickadd:QuickAdd": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": true,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false,
+      "graph:查看关系图谱": false,
+      "workspaces:管理工作区布局": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "43f2a08e8da8da62",
+  "lastOpenFiles": [
+    "blog/posts/CS/MIT Missing-Semester/Shell Tools and Scripting.md",
+    "dairy/template/weekly.md",
+    "dairy/template/daily.md",
+    "dairy/template",
+    "template/weekly.md",
+    "template/daily.md",
+    "template",
+    "dairy/weekly/week01.md",
+    "blog/posts/tools/git/idea-git-02.md",
+    "dairy/weekly",
+    "dairy/daily",
+    "dairy",
+    "blog/posts/tools/git/idea-git-03.md",
+    "blog/posts/tools/git/idea-git-04.md",
+    "blog/posts/tools/git/idea-git-01.md",
+    "blog/posts/tools/git/idea-git-05.md",
+    "blog/posts/tools/homebrew.md",
+    "blog/posts/tools/ideavim.md",
+    "blog/posts/tools/neovim.md",
+    "blog/posts/tools/oh-my-zsh.md",
+    "blog/posts/docker/RocketMQ.md",
+    "blog/posts/docker/Redis.md",
+    "blog/posts/docker/PostgreSQL.md",
+    "blog/posts/docker/Mysql.md",
+    "blog/posts/docker/Minio.md",
+    "blog/posts/docker/docker.md",
+    "blog/posts/linux/linux.md",
+    "blog/posts/linux/learn-linux.md",
+    "blog/posts/linux/ArchLinux 安装.md",
+    "blog/posts/CS/MIT Missing-Semester/Shell.md",
+    "blog/posts/CS/MIT Missing-Semester/Editors (Vim).md",
+    "blog/backend/spring/media/diagram.png",
+    "blog/backend/spring/media",
+    "blog/backend/Go",
+    "未命名.canvas",
+    "Attachment/Pasted image 20240820004951.png",
+    "Attachment/Pasted image 20240820004721.png",
+    "Attachment/Pasted image 20240820004523.png",
+    "Attachment/Pasted image 20240717033502.png",
+    "大三上/CS370 Computation and Complexity/专有名词",
+    "大三上/CS370 Computation and Complexity/杂",
+    "大三上/CS370 Computation and Complexity/ppt笔记",
+    "redis/实战篇/Redis实战篇.assets/避震器.gif",
+    "redis/实战篇/Redis实战篇.assets/image-20220523221428827.png",
+    "redis/实战篇/Redis实战篇.assets/image-20220523220950421.png",
+    "redis/实战篇/Redis实战篇.assets/image-20220523214414123.png",
+    "redis/实战篇/Redis实战篇.assets/image-20220523212915666.png"
+  ]
+}

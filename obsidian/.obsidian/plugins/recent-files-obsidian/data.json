@@ -1,0 +1,137 @@
+{
+  "recentFiles": [
+    {
+      "basename": "daily",
+      "path": "dairy/template/daily.md"
+    },
+    {
+      "basename": "Shell Tools and Scripting",
+      "path": "blog/posts/CS/MIT Missing-Semester/Shell Tools and Scripting.md"
+    },
+    {
+      "basename": "week01",
+      "path": "dairy/weekly/week01.md"
+    },
+    {
+      "basename": "idea-git-02",
+      "path": "blog/posts/tools/git/idea-git-02.md"
+    },
+    {
+      "basename": "idea-git-03",
+      "path": "blog/posts/tools/git/idea-git-03.md"
+    },
+    {
+      "basename": "idea-git-04",
+      "path": "blog/posts/tools/git/idea-git-04.md"
+    },
+    {
+      "basename": "idea-git-01",
+      "path": "blog/posts/tools/git/idea-git-01.md"
+    },
+    {
+      "basename": "idea-git-05",
+      "path": "blog/posts/tools/git/idea-git-05.md"
+    },
+    {
+      "basename": "homebrew",
+      "path": "blog/posts/tools/homebrew.md"
+    },
+    {
+      "basename": "ideavim",
+      "path": "blog/posts/tools/ideavim.md"
+    },
+    {
+      "basename": "neovim",
+      "path": "blog/posts/tools/neovim.md"
+    },
+    {
+      "basename": "oh-my-zsh",
+      "path": "blog/posts/tools/oh-my-zsh.md"
+    },
+    {
+      "basename": "RocketMQ",
+      "path": "blog/posts/docker/RocketMQ.md"
+    },
+    {
+      "basename": "Redis",
+      "path": "blog/posts/docker/Redis.md"
+    },
+    {
+      "basename": "PostgreSQL",
+      "path": "blog/posts/docker/PostgreSQL.md"
+    },
+    {
+      "basename": "Mysql",
+      "path": "blog/posts/docker/Mysql.md"
+    },
+    {
+      "basename": "Minio",
+      "path": "blog/posts/docker/Minio.md"
+    },
+    {
+      "basename": "docker",
+      "path": "blog/posts/docker/docker.md"
+    },
+    {
+      "basename": "linux",
+      "path": "blog/posts/linux/linux.md"
+    },
+    {
+      "basename": "learn-linux",
+      "path": "blog/posts/linux/learn-linux.md"
+    },
+    {
+      "basename": "ArchLinux 安装",
+      "path": "blog/posts/linux/ArchLinux 安装.md"
+    },
+    {
+      "basename": "Shell",
+      "path": "blog/posts/CS/MIT Missing-Semester/Shell.md"
+    },
+    {
+      "basename": "Editors (Vim)",
+      "path": "blog/posts/CS/MIT Missing-Semester/Editors (Vim).md"
+    },
+    {
+      "basename": "Data Wrangling",
+      "path": "blog/posts/CS/MIT Missing-Semester/Data Wrangling.md"
+    },
+    {
+      "basename": "AstroMailer",
+      "path": "blog/posts/project/AstroMailer.md"
+    },
+    {
+      "basename": "Spring-tx",
+      "path": "blog/backend/spring/Spring-tx.md"
+    },
+    {
+      "basename": "Spring-MVC",
+      "path": "blog/backend/spring/Spring-MVC.md"
+    },
+    {
+      "basename": "Spring-IOC",
+      "path": "blog/backend/spring/Spring-IOC.md"
+    },
+    {
+      "basename": "Spring-Boot",
+      "path": "blog/backend/spring/Spring-Boot.md"
+    },
+    {
+      "basename": "Spring-AOP",
+      "path": "blog/backend/spring/Spring-AOP.md"
+    },
+    {
+      "basename": "Spring Converter",
+      "path": "blog/backend/spring/Spring Converter.md"
+    },
+    {
+      "basename": "学习资料",
+      "path": "blog/backend/spring/simple-spring/学习资料.md"
+    },
+    {
+      "basename": "simple-spring",
+      "path": "blog/backend/spring/simple-spring/simple-spring.md"
+    }
+  ],
+  "omittedPaths": []
+}

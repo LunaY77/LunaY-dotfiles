@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Catppuccin",
+  "accentColor": "#abcdef",
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "custom"
+  ],
+  "showRibbon": true,
+  "interfaceFontFamily": "Hack Nerd Font",
+  "baseFontSizeAction": false,
+  "monospaceFontFamily": "Hack Nerd Font Mono",
+  "textFontFamily": ""
+}

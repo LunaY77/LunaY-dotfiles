@@ -9,10 +9,10 @@ nmap [ {
 nmap ] }
 
 " 跳转到下一个 Heading
-exmap nextHeading jsfile .obsidian.markdown-helper.js {jumpHeading(true)}
-exmap prevHeading jsfile .obsidian.markdown-helper.js {jumpHeading(false)}
-nmap g] :nextHeading
-nmap g[ :prevHeading
+exmap nextHeading obcommand quick-snippets-and-navigation:goToNextHeading
+exmap prevHeading obcommand quick-snippets-and-navigation:goToPrevHeading
+nmap g] :nextHeading<CR>
+nmap g[ :prevHeading<CR>
 
 
 " Surround
@@ -55,6 +55,10 @@ exmap zoomIn obcommand obsidian-zoom:zoom-in
 exmap zoomOut obcommand obsidian-zoom:zoom-out
 nmap zi :zoomIn<CR>
 nmap zo :zoomOut<CR>
+
+" 需要安装 Quick snippets and navigation
+nmap z] :zoomOut<CR>:nextHeading<CR>:zoomIn<CR>
+nmap z[ :zoomOut<CR>:prevHeading<CR>:zoomIn<CR>
 
 " 需要安装 Stille 插件 
 " Stille Mode

@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "FrequencyControl",
+      "path": "blog/backend/Java/FrequencyControl.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "未命名.md"
+    },
+    {
+      "basename": "重学 Mybatis",
+      "path": "blog/backend/Java/重学 Mybatis.md"
+    },
+    {
+      "basename": "ideavim",
+      "path": "blog/posts/tools/ideavim.md"
+    },
+    {
+      "basename": "link",
+      "path": "about/link.md"
+    },
+    {
+      "basename": "Spring-AOP",
+      "path": "blog/backend/spring/Spring-AOP.md"
+    },
+    {
       "basename": "daily",
       "path": "dairy/template/daily.md"
     },
@@ -35,10 +59,6 @@
     {
       "basename": "homebrew",
       "path": "blog/posts/tools/homebrew.md"
-    },
-    {
-      "basename": "ideavim",
-      "path": "blog/posts/tools/ideavim.md"
     },
     {
       "basename": "neovim",
@@ -115,10 +135,6 @@
     {
       "basename": "Spring-Boot",
       "path": "blog/backend/spring/Spring-Boot.md"
-    },
-    {
-      "basename": "Spring-AOP",
-      "path": "blog/backend/spring/Spring-AOP.md"
     },
     {
       "basename": "Spring Converter",

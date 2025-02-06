@@ -218,19 +218,20 @@
     }
   ],
   "obsidian-stille:toggleStille": [],
-  "editor:toggle-bullet-list": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "U"
-    }
-  ],
   "editor:toggle-numbered-list": [
     {
       "modifiers": [
         "Ctrl",
         "Shift"
+      ],
+      "key": "U"
+    }
+  ],
+  "editor:toggle-bullet-list": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
       ],
       "key": "U"
     }

@@ -1,20 +1,156 @@
 {
   "recentFiles": [
     {
+      "basename": "分布式锁",
+      "path": "blog/backend/并发编程/分布式锁.md"
+    },
+    {
+      "basename": "@Transactional 失效场景",
+      "path": "blog/backend/spring/@Transactional 失效场景.md"
+    },
+    {
+      "basename": "JUC",
+      "path": "blog/backend/并发编程/JUC.md"
+    },
+    {
+      "basename": "缓存一致性",
+      "path": "blog/backend/DB/缓存一致性.md"
+    },
+    {
+      "basename": "DB",
+      "path": "blog/backend/DB/DB.md"
+    },
+    {
+      "basename": "Volatile与指令重排",
+      "path": "blog/backend/并发编程/Volatile与指令重排.md"
+    },
+    {
       "basename": "FrequencyControl",
       "path": "blog/backend/Java/FrequencyControl.md"
     },
     {
-      "basename": "未命名",
-      "path": "未命名.md"
+      "basename": "Drawing 2025-03-05 14.51.30.excalidraw",
+      "path": "Excalidraw/Drawing 2025-03-05 14.51.30.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2025-03-05 14.32.09.excalidraw",
+      "path": "Excalidraw/Drawing 2025-03-05 14.32.09.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2025-03-05 14.04.09.excalidraw",
+      "path": "Excalidraw/Drawing 2025-03-05 14.04.09.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2025-03-05 13.31.54.excalidraw",
+      "path": "Excalidraw/Drawing 2025-03-05 13.31.54.excalidraw.md"
+    },
+    {
+      "basename": "AstroMailer",
+      "path": "blog/posts/project/AstroMailer.md"
+    },
+    {
+      "basename": "IO多路复用底层原理",
+      "path": "blog/os/IO多路复用底层原理.md"
+    },
+    {
+      "basename": "消息端到端的一致性与可靠性",
+      "path": "blog/backend/架构设计/消息端到端的一致性与可靠性.md"
+    },
+    {
+      "basename": "ideavim",
+      "path": "blog/posts/tools/ideavim.md"
+    },
+    {
+      "basename": "从消息队列理解Pull与Push模型底层逻辑",
+      "path": "blog/backend/架构设计/从消息队列理解Pull与Push模型底层逻辑.md"
+    },
+    {
+      "basename": "循环依赖",
+      "path": "blog/backend/spring/循环依赖.md"
+    },
+    {
+      "basename": "Spring-tx",
+      "path": "blog/backend/spring/Spring-tx.md"
+    },
+    {
+      "basename": "Drawing 2025-02-17 09.41.29.excalidraw",
+      "path": "Excalidraw/Drawing 2025-02-17 09.41.29.excalidraw.md"
+    },
+    {
+      "basename": "Redis",
+      "path": "blog/posts/docker/Redis.md"
+    },
+    {
+      "basename": "linux",
+      "path": "blog/posts/linux/linux.md"
+    },
+    {
+      "basename": "Mysql",
+      "path": "blog/posts/docker/Mysql.md"
+    },
+    {
+      "basename": "docker",
+      "path": "blog/posts/docker/docker.md"
+    },
+    {
+      "basename": "2025-07-02-10-1",
+      "path": "dairy/daily/2025-07-02-10-1.md"
+    },
+    {
+      "basename": "idea-git-04",
+      "path": "blog/posts/tools/git/idea-git-04.md"
+    },
+    {
+      "basename": "idea-git-03",
+      "path": "blog/posts/tools/git/idea-git-03.md"
+    },
+    {
+      "basename": "Drawing 2025-02-08 13.22.42.excalidraw",
+      "path": "Excalidraw/Drawing 2025-02-08 13.22.42.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2025-02-08 13.24.46.excalidraw",
+      "path": "Excalidraw/Drawing 2025-02-08 13.24.46.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2025-02-08 13.20.34.excalidraw",
+      "path": "Excalidraw/Drawing 2025-02-08 13.20.34.excalidraw.md"
+    },
+    {
+      "basename": "2025-06-02-08-6",
+      "path": "dairy/daily/2025-06-02-08-6.md"
     },
     {
       "basename": "重学 Mybatis",
       "path": "blog/backend/Java/重学 Mybatis.md"
     },
     {
-      "basename": "ideavim",
-      "path": "blog/posts/tools/ideavim.md"
+      "basename": "2025-06-02-07-5",
+      "path": "dairy/daily/2025-06-02-07-5.md"
+    },
+    {
+      "basename": "2025-06-02-06-4",
+      "path": "dairy/daily/2025-06-02-06-4.md"
+    },
+    {
+      "basename": "daily",
+      "path": "dairy/template/daily.md"
+    },
+    {
+      "basename": "ArchLinux 安装",
+      "path": "blog/posts/linux/ArchLinux 安装.md"
+    },
+    {
+      "basename": "learn-linux",
+      "path": "blog/posts/linux/learn-linux.md"
+    },
+    {
+      "basename": "BasicGrammar",
+      "path": "blog/frontend/JavaScript/QuickDive/BasicGrammar.md"
+    },
+    {
+      "basename": "Shell",
+      "path": "blog/posts/CS/MIT Missing-Semester/Shell.md"
     },
     {
       "basename": "link",
@@ -23,10 +159,6 @@
     {
       "basename": "Spring-AOP",
       "path": "blog/backend/spring/Spring-AOP.md"
-    },
-    {
-      "basename": "daily",
-      "path": "dairy/template/daily.md"
     },
     {
       "basename": "Shell Tools and Scripting",
@@ -39,14 +171,6 @@
     {
       "basename": "idea-git-02",
       "path": "blog/posts/tools/git/idea-git-02.md"
-    },
-    {
-      "basename": "idea-git-03",
-      "path": "blog/posts/tools/git/idea-git-03.md"
-    },
-    {
-      "basename": "idea-git-04",
-      "path": "blog/posts/tools/git/idea-git-04.md"
     },
     {
       "basename": "idea-git-01",
@@ -73,80 +197,8 @@
       "path": "blog/posts/docker/RocketMQ.md"
     },
     {
-      "basename": "Redis",
-      "path": "blog/posts/docker/Redis.md"
-    },
-    {
       "basename": "PostgreSQL",
       "path": "blog/posts/docker/PostgreSQL.md"
-    },
-    {
-      "basename": "Mysql",
-      "path": "blog/posts/docker/Mysql.md"
-    },
-    {
-      "basename": "Minio",
-      "path": "blog/posts/docker/Minio.md"
-    },
-    {
-      "basename": "docker",
-      "path": "blog/posts/docker/docker.md"
-    },
-    {
-      "basename": "linux",
-      "path": "blog/posts/linux/linux.md"
-    },
-    {
-      "basename": "learn-linux",
-      "path": "blog/posts/linux/learn-linux.md"
-    },
-    {
-      "basename": "ArchLinux 安装",
-      "path": "blog/posts/linux/ArchLinux 安装.md"
-    },
-    {
-      "basename": "Shell",
-      "path": "blog/posts/CS/MIT Missing-Semester/Shell.md"
-    },
-    {
-      "basename": "Editors (Vim)",
-      "path": "blog/posts/CS/MIT Missing-Semester/Editors (Vim).md"
-    },
-    {
-      "basename": "Data Wrangling",
-      "path": "blog/posts/CS/MIT Missing-Semester/Data Wrangling.md"
-    },
-    {
-      "basename": "AstroMailer",
-      "path": "blog/posts/project/AstroMailer.md"
-    },
-    {
-      "basename": "Spring-tx",
-      "path": "blog/backend/spring/Spring-tx.md"
-    },
-    {
-      "basename": "Spring-MVC",
-      "path": "blog/backend/spring/Spring-MVC.md"
-    },
-    {
-      "basename": "Spring-IOC",
-      "path": "blog/backend/spring/Spring-IOC.md"
-    },
-    {
-      "basename": "Spring-Boot",
-      "path": "blog/backend/spring/Spring-Boot.md"
-    },
-    {
-      "basename": "Spring Converter",
-      "path": "blog/backend/spring/Spring Converter.md"
-    },
-    {
-      "basename": "学习资料",
-      "path": "blog/backend/spring/simple-spring/学习资料.md"
-    },
-    {
-      "basename": "simple-spring",
-      "path": "blog/backend/spring/simple-spring/simple-spring.md"
     }
   ],
   "omittedPaths": []

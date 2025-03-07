@@ -4,6 +4,10 @@ inoremap jk <Esc>
 " 访问系统剪切板
 set clipboard=unnamed
 
+" 将 'j' 和 'k' 映射为在实际行之间移动
+nmap j gj
+nmap k gk
+
 " 跳转到下一个段落
 nmap [ {
 nmap ] }
@@ -51,10 +55,10 @@ map s` :surround_backtick<CR>
 " Zoom in/out
 " zi: 放大
 " zo: 缩小
-exmap zoomIn obcommand obsidian-zoom:zoom-in
-exmap zoomOut obcommand obsidian-zoom:zoom-out
-nmap zi :zoomIn<CR>
-nmap zo :zoomOut<CR>
+" exmap zoomIn obcommand obsidian-zoom:zoom-in
+" exmap zoomOut obcommand obsidian-zoom:zoom-out
+" nmap zi :zoomIn<CR>
+" nmap zo :zoomOut<CR>
 
 " 需要安装 Quick snippets and navigation
 nmap z] :zoomOut<CR>:nextHeading<CR>:zoomIn<CR>

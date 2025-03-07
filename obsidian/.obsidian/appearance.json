@@ -11,5 +11,6 @@
   "interfaceFontFamily": "Hack Nerd Font",
   "baseFontSizeAction": false,
   "monospaceFontFamily": "Hack Nerd Font Mono",
-  "textFontFamily": ""
+  "textFontFamily": "",
+  "translucency": false
 }

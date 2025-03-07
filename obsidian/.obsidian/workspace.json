@@ -4,17 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "017cc4faf1f839b2",
+        "id": "4cfa41a3a23282ef",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
-            "id": "4fa8b2c3d3772d66",
+            "id": "b67dd78b409530db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/backend/Java/FrequencyControl.md",
+                "file": "blog/backend/并发编程/分布式锁.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -29,24 +28,23 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FrequencyControl"
+              "title": "分布式锁"
             },
-            "group": "f0294847293384ff"
+            "group": "1e3fd3fa889120b9"
           }
         ]
       },
       {
-        "id": "5e6db058fc446761",
+        "id": "cf01745097e0ea8d",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
-            "id": "a82e5d3a1ffb4fe6",
+            "id": "acfce1c37f61950d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/backend/Java/FrequencyControl.md",
+                "file": "blog/backend/并发编程/分布式锁.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": true,
@@ -61,9 +59,9 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "FrequencyControl"
+              "title": "分布式锁"
             },
-            "group": "f0294847293384ff"
+            "group": "1e3fd3fa889120b9"
           }
         ]
       }
@@ -77,7 +75,7 @@
       {
         "id": "88a447b3194ed60c",
         "type": "tabs",
-        "dimension": 60.70150322118826,
+        "dimension": 75.02410800385728,
         "children": [
           {
             "id": "1d3e0639cf4c759c",
@@ -115,7 +113,7 @@
       {
         "id": "414a62a80d4fa672",
         "type": "tabs",
-        "dimension": 39.29849677881174,
+        "dimension": 24.975891996142717,
         "children": [
           {
             "id": "38119d24dd106535",
@@ -131,7 +129,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 228
   },
   "right": {
     "id": "a2f3e69f1404aa81",
@@ -158,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/backend/Java/重学 Mybatis.md",
+                "file": "blog/backend/JUC/JUC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +166,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "重学 Mybatis 的反向链接列表"
+              "title": "JUC 的反向链接列表"
             }
           },
           {
@@ -194,20 +192,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/backend/Java/FrequencyControl.md",
-                "followCursor": false,
+                "file": "blog/backend/并发编程/分布式锁.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "FrequencyControl 的大纲"
+              "title": "分布式锁 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 212
+    "width": 235
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,53 +218,54 @@
       "obsidian-git:Open Git source control": false,
       "graph:查看关系图谱": false,
       "workspaces:管理工作区布局": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "4fa8b2c3d3772d66",
+  "active": "b67dd78b409530db",
   "lastOpenFiles": [
-    "未命名.md",
+    "blog/backend/spring/@Transactional 失效场景.md",
+    "blog/backend/并发编程/分布式锁.md",
+    "blog/backend/并发编程/JUC.md",
+    "blog/backend/DB/缓存一致性.md",
+    "blog/backend/DB/DB.md",
+    "blog/backend/并发编程/Volatile与指令重排.md",
+    "blog/backend/并发编程/多线程.md",
     "blog/backend/Java/FrequencyControl.md",
-    "blog/backend/Java/重学 Mybatis.md",
+    "Excalidraw/Drawing 2025-03-05 14.51.30.excalidraw.md",
+    "Excalidraw/Drawing 2025-03-05 14.32.09.excalidraw.md",
+    "Excalidraw/Drawing 2025-03-05 14.04.09.excalidraw.md",
+    "Excalidraw/Drawing 2025-03-05 13.31.54.excalidraw.md",
+    "blog/posts/project/AstroMailer.md",
+    "blog/os/IO多路复用底层原理.md",
+    "blog/backend/架构设计/消息端到端的一致性与可靠性.md",
     "blog/posts/tools/ideavim.md",
-    "blog/backend/Java/c",
-    "about/link.md",
-    "blog/backend/spring/Spring-AOP.md",
-    "dairy/template/daily.md",
-    "blog/posts/CS/MIT Missing-Semester/Shell Tools and Scripting.md",
-    "dairy/template/weekly.md",
-    "dairy/template",
-    "template/weekly.md",
-    "template/daily.md",
-    "template",
-    "dairy/weekly/week01.md",
-    "blog/posts/tools/git/idea-git-02.md",
-    "dairy/weekly",
-    "dairy/daily",
-    "dairy",
-    "blog/posts/tools/git/idea-git-03.md",
-    "blog/posts/tools/git/idea-git-04.md",
-    "blog/posts/tools/git/idea-git-01.md",
-    "blog/posts/tools/git/idea-git-05.md",
-    "blog/posts/tools/homebrew.md",
-    "blog/posts/tools/neovim.md",
-    "blog/posts/tools/oh-my-zsh.md",
-    "blog/posts/docker/RocketMQ.md",
+    "blog/os",
+    "blog/backend/JUC/3. 线程运行-查看和杀死.md",
+    "blog/backend/JUC/2. 创建线程.md",
+    "blog/backend/JUC/1. 进程与线程.md",
+    "blog/backend/架构设计/从消息队列理解Pull与Push模型底层逻辑.md",
+    "blog/backend/DB",
+    "blog/backend/并发编程",
+    "blog/backend/spring/循环依赖.md",
+    "blog/backend/spring/Spring-tx.md",
+    "Excalidraw/Drawing 2025-02-17 09.41.29.excalidraw.md",
     "blog/posts/docker/Redis.md",
-    "blog/posts/docker/PostgreSQL.md",
+    "blog/posts/linux/linux.md",
     "blog/posts/docker/Mysql.md",
-    "blog/posts/docker/Minio.md",
-    "blog/posts/docker/docker.md",
+    "Excalidraw",
+    "blog/backend/架构设计",
+    "blog/computer-networking/hnust/chapter1-概述",
+    "blog/computer-networking/hnust",
+    "blog/computer-networking",
+    "blog/backend/Java/c",
+    "dairy/template",
     "blog/backend/spring/media/diagram.png",
-    "blog/backend/spring/media",
-    "blog/backend/Go",
     "未命名.canvas",
     "Attachment/Pasted image 20240820004951.png",
     "Attachment/Pasted image 20240820004721.png",
     "Attachment/Pasted image 20240820004523.png",
     "Attachment/Pasted image 20240717033502.png",
-    "大三上/CS370 Computation and Complexity/专有名词",
-    "大三上/CS370 Computation and Complexity/杂",
     "redis/实战篇/Redis实战篇.assets/避震器.gif",
     "redis/实战篇/Redis实战篇.assets/image-20220523221428827.png",
     "redis/实战篇/Redis实战篇.assets/image-20220523220950421.png",

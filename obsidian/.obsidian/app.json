@@ -17,5 +17,6 @@
   "attachmentFolderPath": "zob-source/images",
   "newFileFolderPath": "graph",
   "vimMode": true,
-  "livePreview": false
+  "livePreview": false,
+  "readableLineLength": false
 }

@@ -54,8 +54,8 @@ nmap <C-x> <Plug>SkipOccurrence
 xmap <C-x> <Plug>SkipOccurrence
 nmap <C-p> <Plug>RemoveOccurrence
 xmap <C-p> <Plug>RemoveOccurrence
-nmap <S-C-n> <Plug>AllWholeOccurrences
-xmap <S-C-n> <Plug>AllWholeOccurrences
+nmap <D-C-n> <Plug>AllWholeOccurrences
+xmap <D-C-n> <Plug>AllWholeOccurrences
 
 
 " ================================================================================================

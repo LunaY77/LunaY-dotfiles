@@ -22,6 +22,13 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "前往下一个标签�
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "前往上一个标签页" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "将当前缓冲移动到新标签页" }) --  move current buffer to new tab
 
+-- 使用大写 L 和 H 切换标签页
+keymap.set("n", "L", "<cmd>tabnext<CR>", { desc = "切换到下一个标签页" })
+keymap.set("n", "H", "<cmd>tabprevious<CR>", { desc = "切换到上一个标签页" })
+
+-- 使用 <leader>wx 关闭当前标签页（类似于窗口关闭命令）
+keymap.set("n", "<leader>wx", "<cmd>tabclose<CR>", { desc = "关闭当前标签页" })
+
 vim.keymap.set("n", "<leader>aa", function()
   -- 保存光标位置
   local save_cursor = vim.fn.getpos(".")

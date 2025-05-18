@@ -24,23 +24,77 @@ return {
         -- Buffer local mappings.
         -- See `:help vim.lsp.*` for documentation on any of the below functions
         local opts = { buffer = ev.buf, silent = true }
-        -- TODO: learn lsp
-        -- set keybinds
-        opts.desc = "Show LSP references"
-        keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
+        
+        -- 跳转到下一个错误或警告
+        opts.desc = "跳转到下一个错误或警告"
+        keymap.set("n", "ge", vim.diagnostic.goto_next, opts)
+        
+        -- 将光标移动到上一个方法的声明处
+        opts.desc = "将光标移动到上一个方法的声明处"
+        keymap.set("n", "gp", vim.lsp.buf.document_highlight, opts)
+        
+        -- 将光标移动到下一个方法的声明处
+        opts.desc = "将光标移动到下一个方法的声明处"
+        keymap.set("n", "gn", function()
+          if vim.lsp.buf.document_symbol then
+            vim.cmd("normal! ]m")
+          end
+        end, opts)
+        
+        -- 跳转到父类或接口方法（类似于Go to super method）TODO buggy
+        opts.desc = "跳转到父类或接口方法"
+        keymap.set("n", "gf", function()
+          local win = vim.api.nvim_get_current_win()
+          local cursor_before = vim.api.nvim_win_get_cursor(win)
 
-        opts.desc = "Go to declaration"
-        keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
+          -- 跳转到定义
+          local ok = pcall(vim.lsp.buf.definition)
 
+          -- defer_fn 中延迟执行，判断是否跳转成功
+          vim.defer_fn(function()
+            local cursor_after = vim.api.nvim_win_get_cursor(win)
+
+            local jumped = (cursor_before[1] ~= cursor_after[1]) or (cursor_before[2] ~= cursor_after[2])
+
+            if jumped then
+              -- 已跳转成功，再找引用（调用者）
+              if pcall(require, "telescope.builtin") then
+                require("telescope.builtin").lsp_references()
+              else
+                vim.lsp.buf.references()
+              end
+            else
+              -- 没跳转成功，直接查找引用
+              if pcall(require, "telescope.builtin") then
+                require("telescope.builtin").lsp_references()
+              else
+                vim.lsp.buf.references()
+              end
+            end
+          end, 100)
+        end, opts)
+        
+        -- 跳转到当前接口或抽象类的实现处
+        opts.desc = "跳转到当前接口或抽象类的实现处"
+        keymap.set("n", "ga", function()
+          if pcall(require, "telescope") then
+            vim.cmd("Telescope lsp_implementations")
+          else
+            vim.lsp.buf.implementation()
+          end
+        end, opts)
+        
+        -- 添加显示修复错误提示的快捷键，对应ideavim中的<leader>q
+        opts.desc = "显示修复错误提示"
+        keymap.set("n", "<leader>q", vim.lsp.buf.code_action, opts) -- 显示错误修复建议
+        
+        -- 找到所有引用
+        opts.desc = "跳转到声明或使用"
+        keymap.set("n", "gs", "<cmd>Telescope lsp_references<CR>", opts)
+        
         opts.desc = "Show LSP definitions"
-        keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
-
-        opts.desc = "Show LSP implementations"
-        keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
-
-        opts.desc = "Show LSP type definitions"
-        keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
-
+        keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
+        
         opts.desc = "See available code actions"
         keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
 

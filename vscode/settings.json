@@ -1,0 +1,329 @@
+{
+  "editor.lineNumbers": "relative",
+  "editor.stickyScroll.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.settings.applyToAllProfiles": ["editor.fontSize"],
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "files.autoSave": "onFocusChange",
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.fontSize": 15,
+  "workbench.iconTheme": "material-icon-theme",
+  "vim.enableNeovim": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Hack Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "vscode-dosbox.command.dosbox": "open -a dosbox --args",
+  "masmtasm.ASM.emulator": "dosbox",
+  "masmtasm.ASM.assembler": "MASM-v6.11",
+  "editor.minimap.enabled": false,
+  "projectManager.git.baseFolders": ["~\\Documents\\Code"],
+  "projectManager.sortList": "Recent",
+  "vim.leader": "<space>",
+  "vim.foldfix": true,
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-s>"],
+      "after": ["<Esc>"],
+      "commands": ["workbench.action.files.save"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // 基本映射
+    {
+      "before": ["g", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTest"]
+    },
+    {
+      "before": ["g", "p"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["g", "n"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "a"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "s"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["<C-s>"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+    // leader 键映射
+    {
+      "before": ["<leader>", "a", "a"],
+      "after": ["^"]
+    },
+    {
+      "before": ["<leader>", "a", "d"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["workbench.action.closeAllEditors"]
+    },
+    {
+      "before": ["<leader>", "c", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["editor.action.triggerSuggest"]
+    },
+    {
+      "before": ["<leader>", "c", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.showReferences"]
+    },
+    {
+      "before": ["<leader>", "d", "p"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "d", "b"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "f", "l"],
+      "commands": ["revealFileInOS"]
+    },
+    {
+      "before": ["<leader>", "f", "t"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "c"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "f", "m"],
+      "commands": [
+        "editor.action.formatDocument",
+        "editor.action.organizeImports"
+      ]
+    },
+    {
+      "before": ["<leader>", "g", "r"],
+      "commands": ["git.revertSelectedRanges"]
+    },
+    {
+      "before": ["<leader>", "g", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "after": ["f", "(", "a"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["<leader>", "n", "h"],
+      "commands": [":nohlsearch"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "+", "p"]
+    },
+    {
+      "before": ["<leader>", "P"],
+      "after": ["\"", "+", "P"]
+    },
+    {
+      "before": ["<leader>", "r", "c"],
+      "commands": ["workbench.action.debug.run"]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["workbench.action.debug.restart"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "s", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<leader>", "s", "t"],
+      "commands": ["workbench.action.debug.stop"]
+    },
+    {
+      "before": ["<leader>", "s", "c"],
+      "after": ["<C-w>", "c"]
+    },
+    {
+      "before": ["<leader>", "s", "l"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "s", "h"],
+      "commands": ["workbench.action.splitEditorLeft"]
+    },
+    {
+      "before": ["<leader>", "s", "j"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "s", "k"],
+      "commands": ["workbench.action.splitEditorUp"]
+    },
+    {
+      "before": ["<leader>", "w", "a"],
+      "commands": ["workbench.action.joinAllGroups"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "after": ["\"", "+", "y", "y"]
+    },
+    {
+      "before": ["<leader>", "z", "f"],
+      "after": ["z", "c"]
+    },
+    {
+      "before": ["<leader>", "z", "g"],
+      "after": ["z", "o"]
+    },
+    {
+      "before": ["<leader>", "z", "o"],
+      "commands": ["editor.unfoldAll"]
+    },
+    {
+      "before": ["<leader>", "z", "c"],
+      "commands": ["editor.foldAll"]
+    },
+    {
+      "before": ["<leader>", "+"],
+      "after": ["<C-a>"]
+    },
+    {
+      "before": ["<leader>", "-"],
+      "after": ["<C-x>"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["editor.action.quickFix"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-j>"],
+      "after": [":m", "'>+1", "<CR>", "g", "v", "=", "g", "v"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": [":m", "'<-2", "<CR>", "g", "v", "=", "g", "v"]
+    },
+    {
+      "before": ["a", "a"],
+      "after": ["^"]
+    },
+    {
+      "before": ["a", "d"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "after": ["\"", "+", "y"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "+", "p"]
+    },
+    {
+      "before": ["<leader>", "P"],
+      "after": ["\"", "+", "P"]
+    },
+    {
+      "before": ["<leader>", "d", "d"],
+      "after": ["\"", "+", "d"]
+    },
+    {
+      "before": ["g", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<leader>", "e", "m"],
+      "commands": ["editor.action.extractMethod"]
+    },
+    {
+      "before": ["<leader>", "e", "c"],
+      "commands": ["editor.action.extractConstant"]
+    },
+    {
+      "before": ["<leader>", "e", "v"],
+      "commands": ["editor.action.extractVariable"]
+    }
+  ],
+  "zenMode.hideLineNumbers": false
+}

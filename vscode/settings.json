@@ -14,6 +14,7 @@
   "files.autoSave": "onFocusChange",
   "redhat.telemetry.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "editor.fontSize": 15,
   "workbench.iconTheme": "material-icon-theme",
@@ -21,7 +22,6 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
   "editor.fontFamily": "'Hack Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
   "vscode-dosbox.command.dosbox": "open -a dosbox --args",
@@ -135,10 +135,16 @@
       "before": ["<leader>", "f", "f"],
       "commands": ["workbench.action.quickOpen"]
     },
-    {
-      "before": ["<leader>", "f", "l"],
-      "commands": ["revealFileInOS"]
-    },
+    // {
+    //     "before": [
+    //         "<leader>",
+    //         "f",
+    //         "l"
+    //     ],
+    //     "commands": [
+    //         "revealFileInOS"
+    //     ]
+    // },
     {
       "before": ["<leader>", "f", "t"],
       "commands": ["workbench.action.findInFiles"]
@@ -325,5 +331,6 @@
       "commands": ["editor.action.extractVariable"]
     }
   ],
-  "zenMode.hideLineNumbers": false
+  "zenMode.hideLineNumbers": false,
+  "C_Cpp.intelliSenseEngine": "disabled"
 }

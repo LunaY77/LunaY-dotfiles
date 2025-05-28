@@ -1,64 +1,64 @@
 // Place your key bindings in this file to override the defaults
 [
-  {
-    "key": "cmd+o",
-    "command": "projectManager.listGitProjects#sideBarGit"
-  },
-  {
-    "command": "expand_region",
-    "key": "alt+up",
-    "when": "editorTextFocus"
-  },
-  {
-    "command": "undo_expand_region",
-    "key": "alt+down",
-    "when": "editorTextFocus && editorHasSelection"
-  },
-  {
-    "command": "workbench.action.toggleSidebarVisibility",
-    "key": "ctrl+e"
-  },
-  {
-    "command": "workbench.files.action.focusFilesExplorer",
-    "key": "ctrl+e",
-    "when": "editorTextFocus"
-  },
-  {
-    "command": "explorer.newFile",
-    "key": "a",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "renameFile",
-    "key": "r",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "filesExplorer.copy",
-    "key": "c",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "filesExplorer.paste",
-    "key": "p",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "deleteFile",
-    "key": "d",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "enter",
-    "command": "-renameFile",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "ctrl+\\",
-    "command": "workbench.action.togglePanel"
-  },
-  {
-    "key": "cmd+j",
-    "command": "-workbench.action.togglePanel"
-  }
+    {
+        "key": "cmd+o",
+        "command": "projectManager.listGitProjects#sideBarGit",
+    },
+    {
+        "command": "expand_region",
+        "key": "alt+up",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "undo_expand_region",
+        "key": "alt+down",
+        "when": "editorTextFocus && editorHasSelection"
+    },
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
+    },
+    {
+        "command": "workbench.files.action.focusFilesExplorer",
+        "key": "ctrl+e",
+        "when": "editorTextFocus"
+    },
+    {
+        "command": "explorer.newFile",
+        "key": "a",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "renameFile",
+        "key": "r",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "filesExplorer.copy",
+        "key": "c",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "filesExplorer.paste",
+        "key": "p",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "command": "deleteFile",
+        "key": "d",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
 ]

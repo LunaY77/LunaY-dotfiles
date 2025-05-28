@@ -33,7 +33,11 @@
     "masmtasm.ASM.assembler": "MASM-v6.11",
     "editor.minimap.enabled": false,
     "projectManager.git.baseFolders": [
-        "~\\Documents\\Code"
+        "~\\Documents\\Code\\FZU Course",
+        "~\\Documents\\Code\\CS Course",
+        "~\\Documents\\Code\\github.com",
+        "~\\Documents\\Code\\Python",
+        "~\\Documents\\Resources\\my-mkdocs"
     ],
     "projectManager.sortList": "Recent",
     "vim.leader": "<space>",

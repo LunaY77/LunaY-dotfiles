@@ -37,6 +37,9 @@
         "~\\Documents\\Code\\CS Course",
         "~\\Documents\\Code\\github.com",
         "~\\Documents\\Code\\Python",
+        "~\\Documents\\Code\\prompt",
+        "~\\Documents\\Code\\FrontEnd",
+        "~\\Documents\\Code\\go",
         "~\\Documents\\Resources\\my-mkdocs"
     ],
     "projectManager.sortList": "Recent",
@@ -75,6 +78,14 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         // 基本映射
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
         {
             "before": [
                 "g",
@@ -776,12 +787,11 @@
     "window.zoomLevel": 0.25,
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.fontSize": 15,
-    "markdown-preview-enhanced.previewTheme": "none.css",
+    "markdown-preview-enhanced.previewTheme": "one-light.css",
     "background.enabled": true,
     "background.fullscreen": {
         "images": [
             "file:///Users/cangjingyue/Documents/Resources/WallPaper/3.png",
-            "file:///Users/cangjingyue/Documents/Resources/WallPaper/4.png",
             "file:///Users/cangjingyue/Documents/Resources/WallPaper/5.png",
             "file:///Users/cangjingyue/Documents/Resources/WallPaper/6.png",
             "file:///Users/cangjingyue/Documents/Resources/WallPaper/7.png"
@@ -792,4 +802,6 @@
         "interval": 0,
         "random": true
     },
+    "markdown-preview-enhanced.enablePreviewZenMode": true,
+    "markdown-preview-enhanced.codeBlockTheme": "auto.css",
 }
